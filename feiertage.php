@@ -153,11 +153,11 @@ class FeiertagKalender {
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 1, 6, $jahr), 'Heilige Drei Könige',
 					array(Bundesland::Baden_Wuerttemberg, Bundesland::Bayern, Bundesland::Sachsen_Anhalt)));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 2, 14, $jahr), 'Valentinstag'));
-		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 3, 8, $jahr), 'Internationaler Frauentag', array(Bundesland::Berlin, Bundesland::Mecklenburg_Vorpommern)));
+		//array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 3, 8, $jahr), 'Internationaler Frauentag', array(Bundesland::Berlin, Bundesland::Mecklenburg_Vorpommern)));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 3, 17, $jahr), 'Saint Patrick\'s Day'));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 4, 30, $jahr), 'Walpurgisnacht'));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 5, 1, $jahr), 'Tag der Arbeit', $alle));
-		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 5, 8, $jahr), 'Tag der Befreiung'));
+		//array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 5, 8, $jahr), 'Tag der Befreiung'));
 		array_push($this->feiertage, new Feiertag(strtotime('-52 days', $ostersonntag), 'Weiberfastnacht'));
 		array_push($this->feiertage, new Feiertag(strtotime('-48 days', $ostersonntag), 'Rosenmontag'));
 		array_push($this->feiertage, new Feiertag(strtotime('-47 days', $ostersonntag), 'Fastnacht'));
@@ -168,7 +168,7 @@ class FeiertagKalender {
 		array_push($this->feiertage, new Feiertag(strtotime('-1 day', $ostersonntag), 'Karsamstag'));
 		array_push($this->feiertage, new Feiertag($ostersonntag, 'Ostersonntag', array(Bundesland::Brandenburg, Bundesland::Hessen)));
 		array_push($this->feiertage, new Feiertag(strtotime('+1 day', $ostersonntag), 'Ostermontag', $alle));
-		array_push($this->feiertage, new Feiertag(strtotime('+7 days', $ostersonntag), 'Weißer Sonntag'));
+		//array_push($this->feiertage, new Feiertag(strtotime('+7 days', $ostersonntag), 'Weißer Sonntag'));
 		array_push($this->feiertage, new Feiertag(strtotime('+39 days', $ostersonntag), 'Christi Himmelfahrt', $alle));
 		array_push($this->feiertage, new Feiertag(strtotime('+49 days', $ostersonntag), 'Pfingstsonntag', array(Bundesland::Brandenburg, Bundesland::Hessen)));
 		array_push($this->feiertage, new Feiertag(strtotime('+50 days', $ostersonntag), 'Pfingstmontag', $alle));
@@ -176,10 +176,10 @@ class FeiertagKalender {
 					array(Bundesland::Baden_Wuerttemberg, Bundesland::Bayern, Bundesland::Hessen,
 						Bundesland::Nordrhein_Westfalen, Bundesland::Rheinland_Pfalz, Bundesland::Saarland)));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 5, 14 - ($jahr - 1 + $jahr / 4) % 7, $jahr), 'Muttertag'));
-		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 6, 1, $jahr), 'Internationaler Kindertag'));
-		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 9, 20, $jahr), 'Weltkindertag', array(Bundesland::Thueringen)));
+		//array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 6, 1, $jahr), 'Internationaler Kindertag'));
+		//array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 9, 20, $jahr), 'Weltkindertag', array(Bundesland::Thueringen)));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 8, 15, $jahr), 'Mariä Himmelfahrt',
-					array(Bundesland::Bayern, Bundesland::Saarland)));
+					array(Bundesland::Bayern, Bundesland::Saarland, Bundesland::Nordrhein_Westfalen)));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 10, 3, $jahr), 'Tag der Deutschen Einheit', $alle));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 10, 31, $jahr), 'Halloween'));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 10, 31, $jahr), 'Reformationstag',
@@ -206,15 +206,15 @@ class FeiertagKalender {
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 12, 31, $jahr), 'Silvester'));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 3, 31 - ($jahr + 4 + $jahr / 4) % 7, $jahr), 'Sommerzeit (+1h)'));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 10, 31 - ($jahr + 1 + $jahr / 4) % 7, $jahr), 'Winterzeit (-1h)'));
-		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 6, 14 - ($jahr + 2 + $jahr / 4) % 7, $jahr), 'Tag des Eisenbahners'));
+		//array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 6, 14 - ($jahr + 2 + $jahr / 4) % 7, $jahr), 'Tag des Eisenbahners'));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 7, 31 - ($jahr + 2 + $jahr / 4) % 7, $jahr), 'System Administrator Appreciation Day'));
 		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 3, 31, $jahr), 'World Backup Day'));
-		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 4, 22, $jahr), 'Tag der Erde'));
-		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 6, 12, $jahr), 'Anne Frank Tag'));
-		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 8, 13, $jahr), 'Internationaler Linkshändertag'));
-		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 9, 28, $jahr), 'Safe Abortion Day'));
-		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 10, 4, $jahr), 'Welttierschutztag'));
-		array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 11, 25, $jahr), 'Internationaler Tag gegen Gewalt an Frauen'));
+		//array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 4, 22, $jahr), 'Tag der Erde'));
+		//array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 6, 12, $jahr), 'Anne Frank Tag'));
+		//array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 8, 13, $jahr), 'Internationaler Linkshändertag'));
+		//array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 9, 28, $jahr), 'Safe Abortion Day'));
+		//array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 10, 4, $jahr), 'Welttierschutztag'));
+		//array_push($this->feiertage, new Feiertag(mktime(0, 0, 0, 11, 25, $jahr), 'Internationaler Tag gegen Gewalt an Frauen'));
 		// array_push($this->feiertage, new Feiertag($jahreszeiten->get(Season::Spring), 'Frühlingsanfang'));
 		// array_push($this->feiertage, new Feiertag($jahreszeiten->get(Season::Summer), 'Sommeranfang'));
 		// array_push($this->feiertage, new Feiertag($jahreszeiten->get(Season::Autumn), 'Herbstanfang'));
